@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Lato:ital@1&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    /*animation: about-bg 20s infinite;*/
+}
+.reservation .btns{
+    position: absolute;
+    margin-bottom: 11px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.reservation{
+    display: flex;
+    border-radius:12px ;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    padding: 10px 2px;
+    top:50px ;
+    right: 5px;
+    width: 421px;
+    height: 148px;
+    background-color: rgb(253, 253, 253);
+    margin-right:3%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+}
+.reservation .btns .gratuit{
+width: 389px;
+border: none;
+height: 60px;
+margin-bottom: 12px;
+justify-content: center;
+background: #F8FDD9;
+border-radius: 8px;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+top: 6px;
+color: #567F0A;
+padding-top:16px;
+    
+}
+.reservation .btns .reserver{
+    display: flex;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 400;
+    position: static;
+    width: 389px;
+    height: 40px;
+    left: 16px;
+    top: 92px;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 16px;
+    background: #567f0a;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+.btn-outline-danger{
+    width: 389px;
+    height: 46px;
+}
+.info{
+    margin-top: 5px;
+    text-align: justify;
+    font-family: 'Slabo 27px', serif;
+    color: #8c8c8c;
+    line-height: 20px;
+    font-size: 14px;
+    display: flex;
+    border-radius:12px ;
+    flex-direction: column;
+    position: absolute;
+    padding: 12px 8px;
+    top: 200px;
+    right: -5px;
+    width: 421px;
+    height: 130px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+    margin-top: 10px;
+}
+.info .first{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.left{
+    height: 750px;
+    width: 859px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    border-radius:12px ;
+    padding: 20px;
+    margin-left: -308px;
+    margin-top: 35px;
+}
+.left .global .image{
+    width: 827px;
+    height: 208px;
+    border-radius: 8px;
+}
+.left .global .date{
+    display: flex;
+    position: relative;
+    top: -55px;
+    font-family: 'Rubik', sans-serif;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    width: 96px;
+    height: 96px;
+    left: 16px;
+    font-size: 20px;
+    color: #079CEE;
+    font-weight: 600;
+    background: #EBF7FF;
+}
+.form-control{
+    margin-bottom: 8px;
+}
+.left .global h3{
+    font-size: 25px;
+    position: relative;
+    left: -43px;
+    top: -79px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.left .global .heure {
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    justify-content:center ;
+    color: #079CEE;
+    background: #EBF7FF;
+    justify-content:center;
+    Width :127px;
+    padding-top: 9px;
+    Height: 40px;
+    Top :108px;
+    border-radius :8px;
+    position: relative;
+    left: 130px;
+    top: -77px;
+    margin-bottom: 100px;
+
+}
+
+.left .global .heure h2{
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+}
+
+.left .global .date-heure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.left .global .place-date{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    padding: 1px;
+    color: #079CEE;
+    width: 500px;
+    top: -130px;
+    height: 100px;
+    left: 130px;
+    margin-bottom: 10px;
+    margin-top: -39px;
+    
+}
+.left .global .place-date .place{
+    margin-right: 30px;
+    
+}
+.left .global .place-date .place h2{
+    color: #8c8c8c;
+    margin-bottom:0;
+    font-size: 20px;
+}
+.left .global .place-date .place p{
+    margin-top: 8px; 
+    left: 3px;
+    position: absolute;   
+}
+.left .global .place-date .date1 h2{
+    color: #8c8c8c;
+    margin-bottom:0;
+    font-size: 20px;
+}
+.left .global .place-date .date1 p{
+    margin-top: 8px;
+    position: absolute;
+    left: 176px;
+}
+
+.left .global .infos{
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    text-align:justify;
+    font-size: 15px;
+    color:#8c8c8c;
+    font-weight: 400;
+    line-height: 35px;
+    left: 130px;
+    width: 706px;
+    height: 250px;
+    border-radius: 8px;
+    top:-120px;
+    margin-top: -56px;
+    
+}
+.participants h2{
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    left: -227px;
+}
+.salaries{
+    display: flex;
+    flex-direction: column;
+    width: 859px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.list-head{
+    width: 827px;
+    height: 42px;
+    background: #f6f8fa;
+    border-radius: 8px;
+    color: #8295A9;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 24px;
+    
+}
+
+.salaries .list-head .list-head-link1{
+    float: right;
+    padding: 0 20px;
+}
+
+.participant{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+.participant .participant-user{
+    height: 45px;
+    width: 100%;
+    border-radius: 8px;
+    color: #8295A9;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction:row;
+}
+
+.participant .participant-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 3px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.participant .participant-user .name{
+    font-size: 15px;
+    padding-right: 100px;
+    padding-top: 14px;
+}
+
+.participant .num{
+    font-size: 15px;
+    right: 20px;
+    bottom: -8px;bottom: 5px;
+}
