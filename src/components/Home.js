@@ -27,7 +27,7 @@ function Home() {
     }, [])
 
     const handleSubmit = (e) => {
-
+       event.remainingTickets = event.remainingTickets -tickets ;
         const id = Math.floor(Math.random() * 20);
         let participant = {
             id: id,
@@ -39,7 +39,7 @@ function Home() {
             }
         }
         axios.post('http://localhost:8080/bookings/', participant)
-        setParticipants([...participants, participant]); // pour ajouter dans la liste des participants
+        setParticipants([...participants, participant]); // pour ajouter dans la liste des participants sous forme d'un tableau
         setSubmited(true); // si on a reservé ou pas !!
         setDisplayForm(false); // desactiver le formulaire
     }
@@ -58,8 +58,9 @@ function Home() {
                             <button className="reserver" onClick={e => setDisplayForm(true)}>Réserver</button>
                         </>
                     }
-                    {!displayForm && submited== true && <div className="gratuit"> 🎉 J'y vais {tickets} place reservé</div> }
-                    {!displayForm && submited== true && <button type="button" class="btn btn-outline-danger">Modifier ma réservation</button> }
+                    {!displayForm && submited == true && <div className="gratuit"> 🎉 J'y vais <strong>{tickets} place reservé </strong></div> }
+                    {!displayForm && submited == true && <button type="button" class="btn btn-outline-danger">Modifier ma réservation</button> }
+                    
 
 
 
@@ -88,10 +89,22 @@ function Home() {
                     <h3>{event.title}</h3>
                     <div className="heure"><h2>{moment(event.startAt).format('HH:mm')} - {moment(event.endAt).format('HH:mm')}</h2></div>
                     <div className="place-date">
+                        {!displayForm && submited == false && 
                         <div className="place">
                             <h2>Place restantes</h2>
                             <p>{event.remainingTickets}</p>
                         </div>
+                        }
+
+                        {!displayForm && submited == true &&
+                            <div className="place">
+                            <h2>Place restantes</h2>
+                            <p>{event.remainingTickets  }</p>
+                        </div>
+                                                     
+                        }
+                        
+
                         <div className="date1">
                             <h2>Date de cloture</h2>
                             <p>{moment(event.endAt).format('L')}</p>
@@ -113,7 +126,7 @@ function Home() {
                             return (
                                 <div key={participant.id} className="participant">
                                     <div className="participant-user">
-                                        <img className="img" src={participant.user.avatar?.url || "/avatar.png"} alt="" />
+                                        <img className="img" src={participant.user.avatar?.url || "/avatar.png"}  />
                                         <h3 className="name">{participant.user.firstName + " " + participant.user.lastName}</h3>
                                     </div>
                                     <div className="num">{participant.numberOfTickets}</div>
